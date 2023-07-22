@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+
+<body>
+    {{>header}}
+    <section class="login-main">
+        <div class="login-form">
+            <form action="/login" method="POST">
+                <h2 class="text-center">Log in</h2>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" name="password" required="required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                </div>
+            </form>
+            <p class="text-center"><a href="/registration">Create an Account</a></p>
+        </div>
+    </section>
+    {{>footer}}
+</body>
+
+</html>
